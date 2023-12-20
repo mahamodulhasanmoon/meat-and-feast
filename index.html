@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meat and Feast</title>
+  <!-- font awesome icons -->
+  <script src="https://kit.fontawesome.com/f3c1754a41.js" crossorigin="anonymous"></script>
+  <!-- links from vendors -->
+  <link rel="stylesheet" href="./vendors/css/normalize.css">
+  <link rel="stylesheet" href="./vendors/css/bootstrap.min.css">
+
+  <!-- google font links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- links custom -->
+
+  <!-- <link rel="stylesheet" href="./assets/css/default.css"> -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+
+
+  <nav class="navbar bg_primary text-white  navbar-expand-md navbar-dark  sticky-top">
+    <div class="container">
+      <h1 class="navbar-brand">
+        <a class="text-light text-decoration-none fs-3" href="/">
+          <img style="height: 60px; width: auto;" src="./assets/images/Logo.png" alt="">
+        </a>
+      </h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link   text_white" href="/">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-text-color  text_white" href="/">GALLERY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-text-color  text_white" href="/"> PACKAGES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-text-color  text_white" href="/">EVENTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-text-color  text_white" href="/">BLOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-text-color  text_white" href="/">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- -------------- === === =======================================
+                    Banner Section
+    ===============================================-->
+
+  <section class="section-container">
+    <img class="img-fluid " src="./assets/images/Frist-Banner.png" alt="">
+  </section>
+
+  <section id="categorySelection ">
+    <div class="container my-5">
+      <div class="row g-4 justify-content-center align-items-center">
+        <div class="col-md-4">
+          <div class="categoryContent">
+            <div class="imgContainer d-flex align-items-center justify-content-center">
+              <img class="img-fluid box_shadow" src="./assets/images/12.jpg" alt="">
+              <div class="dark_bg p-3 catText">
+                <h4 class="text-white">PHOTOS</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="categoryContent">
+            <div class="imgContainer d-flex align-items-center justify-content-center">
+              <img class="img-fluid box_shadow" src="./assets/images/12.jpg" alt="">
+              <div class="dark_bg p-3 catText">
+                <h4 class="text-white">PHOTOS</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="categoryContent">
+            <div class="imgContainer d-flex align-items-center justify-content-center">
+              <img class="img-fluid box_shadow" src="./assets/images/12.jpg" alt="">
+              <div class="dark_bg p-3 catText">
+                <h4 class="text-white">PHOTOS</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <div class="bg_color py-5">
+
+    <!-- -------------- === === =======================================
+                    Book Now Section
+    ===============================================-->
+
+    <section class="bookNow">
+      <div class="container ">
+        <div class="parent position-relative">
+          <div class="d-flex gap-4">
+            <div class="imgSection ">
+              <img class="img-fluid" src="./assets/images/5.png" alt="">
+            </div>
+            <h2 class="mb-4">Book Now</h2>
+          </div>
+          <div class="calanderSection bg_primary text-white box_shadow p-4 ">
+            <div class="calCOntent ">
+              <div class="bg_color pt-5">
+
+                <div class="calendar-controls">
+                  <div class="d-flex align-items-center justify-content-center">
+                    <div class="arrow-button" onclick="nextYear()"><i class="fa-solid fa-angle-up"></i></div>
+
+                  </div>
+                  <div class="d-flex clickBtn align-items-center justify-content-between">
+                    <div class="arrow-button" onclick="previousMonth()"><i class="fa-solid fa-angle-left"></i></div>
+                    <span id="currentMonthYear"></span>
+                    <div class="arrow-button" onclick="nextMonth()"><i class="fa-solid fa-angle-right"></i></div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-center">
+                    <div class="arrow-button" onclick="previousYear()"><i class="fa-solid fa-angle-down"></i></div>
+
+                  </div>
+                </div>
+
+
+                <table id="calendar">
+                  <thead>
+                    <tr>
+                      <th>S</th>
+                      <th>M</th>
+                      <th>T</th>
+                      <th>W</th>
+                      <th>T</th>
+                      <th>F</th>
+                      <th>S</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- Calendar days will be inserted here dynamically -->
+                  </tbody>
+                </table>
+              </div>
+              <div class="mt-4">
+                <button class="submitBtn">Submit</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -------------- === === =======================================
+                    Package Card Section
+    ===============================================-->
+    <section class="package my-5">
+      <div class="container">
+        <div class="row  g-5">
+          <div class="col-md-4">
+            <div class="package-card dark_border bg_primary box_shadow mx-auto">
+              <div class="packageImg d-flex justify-content-center">
+                <img class="img-fluid text-center" src="/assets/images/6.png" alt="">
+
+              </div>
+              <div class="content px-2 py-3">
+                <h2 class="text-white mb-1 mt-2">PACKAGE -1</h2>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, mollitia quos?
+                  Accusamus debitis deleniti quia qui similique suscipit omnis praesentium, corporis quos dolor amet
+                  voluptate at repudiandae fuga velit harum.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="package-card box_shadow dark_border bg_primary box_shadow mx-auto">
+              <div class="packageImg d-flex justify-content-center">
+                <img class="img-fluid text-center" src="/assets/images/7.png" alt="">
+
+              </div>
+              <div class="content px-2 py-3">
+                <h2 class="text-white mb-1 mt-2">PACKAGE -1</h2>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, mollitia quos?
+                  Accusamus debitis deleniti quia qui similique suscipit omnis praesentium, corporis quos dolor amet
+                  voluptate at repudiandae fuga velit harum.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="package-card box_shadow dark_border bg_primary box_shadow mx-auto">
+              <div class="packageImg d-flex justify-content-center">
+                <img class="img-fluid text-center" src="/assets/images/7.png" alt="">
+
+              </div>
+              <div class="content px-2 py-3">
+                <h2 class="text-white mb-1 mt-2">PACKAGE -1</h2>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, mollitia quos?
+                  Accusamus debitis deleniti quia qui similique suscipit omnis praesentium, corporis quos dolor amet
+                  voluptate at repudiandae fuga velit harum.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="package-card box_shadow dark_border bg_primary box_shadow mx-auto">
+              <div class="packageImg d-flex justify-content-center">
+                <img class="img-fluid text-center" src="/assets/images/7.png" alt="">
+
+              </div>
+              <div class="content px-2 py-3">
+                <h2 class="text-white mb-1 mt-2">WEDDING</h2>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, mollitia quos?
+                  Accusamus debitis deleniti quia qui similique suscipit omnis praesentium, corporis quos dolor amet
+                  voluptate at repudiandae fuga velit harum.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="package-card box_shadow dark_border bg_primary box_shadow mx-auto">
+              <div class="packageImg d-flex justify-content-center">
+                <img class="img-fluid text-center" src="/assets/images/7.png" alt="">
+
+              </div>
+              <div class="content px-2 py-3">
+                <h2 class="text-white mb-1 mt-2">BIRTHDAY</h2>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, mollitia quos?
+                  Accusamus debitis deleniti quia qui similique suscipit omnis praesentium, corporis quos dolor amet
+                  voluptate at repudiandae fuga velit harum.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="package-card  box_shadow dark_border bg_primary box_shadow mx-auto">
+              <div class="packageImg d-flex justify-content-center">
+                <img class="img-fluid text-center" src="/assets/images/8.png" alt="">
+
+              </div>
+              <div class="content px-2 py-3">
+                <h2 class="text-white mb-1 mt-2">BUSINESS PARTY</h2>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, mollitia quos?
+                  Accusamus debitis deleniti quia qui similique suscipit omnis praesentium, corporis quos dolor amet
+                  voluptate at repudiandae fuga velit harum.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- -------------- === === =======================================
+                    Service Card Section
+    ===============================================-->
+    <!-- border Line  -->
+    <div class="d-flex  align-items-center">
+      <div class="custom-width align-items-center">
+        <div class="d-flex gap-1">
+          <div
+            class="service-headerbox-bg-color d-inline-block p-2 px-4 text-light fw-bolder text-center rounded-end-5 fs-4">
+            OUR SERVICE
+          </div>
+          <div class="d-flex align-items-center gap-1">
+            <div class="p-big service-headerbox-bg-color d-none d-md-inline-block rounded-5"></div>
+            <div class="p-mid service-headerbox-bg-color d-none d-md-inline-block rounded-5"></div>
+            <div class="p-small service-headerbox-bg-color d-none d-md-inline-block rounded-5"></div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+      <div class="p-1 w-100 d-none d-md-block bg-dark d-inline-block rounded-5"></div>
+    </div>
+
+    <section class="container">
+      <div class="row">
+        <div class="col-lg-4 col-12 p-4 position-relative d-inline-block text-start">
+          <div class="clearf">
+            <img style="height: auto; width: 100px;" class="img-fluid box_shadow" src="./assets/images/12.jpg"
+              alt="basic">
+            <div style=" flex: 1;box-sizing: border-box;" class="content p-1 ">
+              <p class="text-decoration-underline text-uppercase text_darkColor">VENUE SELECTION: </p>
+
+              <p class="mt-1 text_darkColor">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum voluptate voluptates dolore harum? Minus
+                esse odit iste. voluptate voluptates dolore harum? Minus esse odit iste.
+              </p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-4 col-12 p-4 position-relative d-inline-block text-start">
+          <div class="clearf">
+            <img style="height: auto; width: 100px;" class="img-fluid box_shadow" src="./assets/images/14.jpg"
+              alt="basic">
+            <div style=" flex: 1;box-sizing: border-box;" class="content p-1 ">
+              <p class="text-decoration-underline text-uppercase text_darkColor">VENUE SELECTION: </p>
+
+              <p class="mt-1 text_darkColor">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum voluptate voluptates dolore harum? Minus
+                esse odit iste.voluptate voluptates dolore harum? Minus esse odit iste.
+              </p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-4 col-12 p-4 position-relative d-inline-block text-start">
+          <div class="clearf">
+            <img style="height: auto; width: 100px;" class="img-fluid box_shadow" src="./assets/images/13.jpg"
+              alt="basic">
+            <div style=" flex: 1;box-sizing: border-box;" class="content p-1 ">
+              <p class="text-decoration-underline text-uppercase text_darkColor">VENUE SELECTION: </p>
+
+              <p class="mt-1 text_darkColor">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum voluptate voluptates dolore harum? Minus
+                esse odit iste. voluptate voluptates dolore harum? Minus esse odit iste.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+      <div class="row">
+        <div class="d-flex align-items-center justify-content-center my-3">
+          <button class="defaultBtn">MORE >></button>
+        </div>
+      </div>
+    </section>
+    <!-- map Services -->
+    <section class="container">
+      <div class="row">
+        <div class="col-lg-6 col-10 m-auto">
+          <!-- <img class="img-fluid dark_border" src="./assets/images/15.png" alt=""> -->
+          <img class="img-fluid dark_border box_shadow"
+            src="https://media.istockphoto.com/id/615422436/photo/demo-sign-cubes.jpg?s=612x612&w=0&k=20&c=HHOLIiF8SmbIssxKv3G480EgTVub_v9cc1QME3Dn6XU="
+            alt="">
+        </div>
+        <div class="col-lg-6 col-12 p-5">
+          <iframe class="w-100 box_shadow" width="400" height="300" frameborder="0" style="border: 0"
+            src="https://www.google.com/maps/embed/v1/place?q=24.854656,90.7913406&amp;key=YOUR_API_KEY"
+            allowfullscreen=""></iframe>
+          <!-- <img class="img-fluid dark_border" src="./assets/images/16.png" alt=""> -->
+        </div>
+      </div>
+
+
+
+
+
+    </section>
+
+  </div>
+
+  <!-- footer -->
+  <footer class="bg_primary p-4">
+    <ul class="d-lg-flex align-lg-items-center  justify-content-center ms-auto mt-2 mt-lg-0">
+      <li class="unstyled">
+        <a class="text-light px-lg-3 px-1 text-decoration-none fs-lg-1 fs-5" href="/">About us</a>
+      </li>
+      <li>
+        <a class="text-light px-lg-3 px-1 text-decoration-none fs-lg-1 fs-5" href="/">Contract</a>
+      </li>
+      <li>
+        <a class="text-light px-lg-3 px-1 text-decoration-none fs-lg-1 fs-5" href="/">Members</a>
+      </li>
+      <li>
+        <a class="text-light px-lg-3 px-1 text-decoration-none fs-lg-1 fs-5" href="/">Our plan</a>
+      </li>
+      <li>
+        <a class="text-light px-lg-3 px-1 text-decoration-none fs-lg-1 fs-5" href="/">Carear</a>
+      </li>
+      <li>
+        <a class="text-light px-lg-3 px-1 text-decoration-none fs-lg-1 fs-5" href="/">FAQ</a>
+      </li>
+    </ul>
+    <ul class="d-flex align-items-center justify-content-center mt-3">
+      <li class="nav-item">
+        <a class="nav-link d-inline-block text-light px-3 fs-5" href="/"><i class="fab fa-facebook"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link d-inline-block text-light px-3 fs-5" href="/"><i class="fab fa-linkedin"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link d-inline-block text-light px-3 fs-5" href="/"><i class="fab fa-youtube"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link d-inline-block text-light px-3 fs-5" href="/"><i class="fab fa-twitter"></i></a>
+      </li>
+
+
+    </ul>
+  </footer>
+
+
+
+  <!-- al JavaScripts links and Tags -->
+  <script src="./vendors/js/bootstrap.min.js"></script>
+  <script src="./vendors/js/jquery.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

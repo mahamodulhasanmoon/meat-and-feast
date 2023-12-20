@@ -1,0 +1,39 @@
+@media (max-width:992px) {
+  .imgSection {
+display: none;
+}
+.calanderSection {
+
+  width: 100%;
+
+}
+.calCOntent {
+  margin-left: 0;
+}
+}
+@media (max-width:776px) {
+    .package-card {
+
+        max-width: 450px;
+      }
+}
+
+@media (max-width:576px) {
+  th, td {
+    font-weight: 700;
+    font-size: 17px;
+    padding: 8px 10px;
+    color: black;
+}
+#currentMonthYear {
+  font-size: 20px;
+
+}
+footer ul{
+  text-align: center;
+}
+.imgContainer img {
+  width: 30%;
+  border-radius: 30px;
+}
+}

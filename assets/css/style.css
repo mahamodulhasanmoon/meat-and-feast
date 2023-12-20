@@ -1,0 +1,167 @@
+@import url('./default.css');
+@import url('./mobilemenu.css');
+
+
+/* for navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
+}
+.navbar{
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+} 
+
+
+/* Book Now Calander Section Css Code */
+
+.calanderSection {
+  border: 4px solid #fff;
+  border-radius: 23px;
+  width: 80%;
+  margin-left: auto;
+  position: absolute;
+  right: 0;
+  top: 45px;
+  z-index: 1;
+  text-align: right;
+  margin-left: 30%;
+}
+.calCOntent{
+  margin-left: 30%;
+}
+.bookNow{
+  height: 700px;
+}
+
+/* calander css  */
+
+
+table {
+  border-collapse: collapse;
+  margin: 20px auto;
+
+}
+.calCOntent .bg_color{
+  border-radius: 20px;
+}
+
+th{
+  background: #DDBEB3;
+}
+
+th ,td{
+ font-weight: 700;
+ font-size: 22px;
+ padding: 10px 20px;
+ color: black;
+}
+
+
+td {
+  cursor: pointer;
+  color: black;
+  border-radius: 50%;
+}
+
+td:hover {
+  background-color: #e6e6e6;
+}
+tr td:first-child  {
+  cursor: pointer;
+  color: red;
+ 
+}
+tr th:first-child  {
+  cursor: pointer;
+  color: red;
+}
+#currentMonthYear{
+  font-size: 28px;
+  color: black;
+  font-weight: 700;
+}
+.current-date {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.current-date:hover{
+  color: black;
+}
+
+.calendar-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.arrow-button {
+  font-size: 1.5em;
+  cursor: pointer;
+  color: black;
+}
+
+
+
+.imgSection {
+  /* position: absolute; */
+  /* top: -70px;
+  left: -117px; */
+  max-width: 400px;
+  height: auto;
+  border: 3px solid #000;
+  border-radius: 10px;
+  z-index: 10;
+}
+.imgSection img{
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* for Package Card */
+
+.package-card {
+  border-radius: 40px;
+  max-width: 300px;
+}
+.package-card img{
+  border-radius: 40px;
+}
+.btn-bg-color,.service-headerbox-bg-color {
+  background-color: #210221
+}
+.p-big{
+padding: 10px;
+}
+.p-mid{
+padding: 8px;
+}
+.p-small{
+padding: 5px;
+}
+.custom-border{
+  padding: 3px;
+}
+.custom-width{
+  width: 400px;
+}
+
+/* services */
+.clearf img {
+  float: left;
+  margin: 10px;
+}
+
+.imgContainer img {
+  width: 30%;
+  border-radius: 30px;
+}
+
+.catText {
+  border-radius: 0 20px 20px 0;
+}

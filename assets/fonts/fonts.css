@@ -1,0 +1,36 @@
+/* Arial for English */
+@font-face {
+    font-family: 'Arial';
+    src: local('Arial'), url('Arial.ttf') format('ttf');
+    font-style: normal;
+    unicode-range: U+0000-007F; /* Basic Latin (English) */
+}
+
+/* RinkiyMJ for Bangla titles and headings */
+@font-face {
+    font-family: 'RinkiyMJ';
+    src: local('RinkiyMJ'), url('RINKIYMJ.TTF') format('ttf');
+    font-style: normal;
+    unicode-range: U+0980-09FF; /* Bengali (Bangla) */
+}
+
+/* Nirmala UI for Bangla paragraphs */
+@font-face {
+    font-family: 'Nirmala UI';
+    src: local('Nirmala UI'), url('NirmalaUI.ttf') format('ttf');
+    font-style: normal;
+    unicode-range: U+0980-09FF; /* Bengali (Bangla) */
+}
+
+/* Apply fonts to different elements */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, a{
+    font-family: 'RinkiyMJ', sans-serif;
+}
+
+p {
+    font-family: 'Nirmala UI', sans-serif;
+}
