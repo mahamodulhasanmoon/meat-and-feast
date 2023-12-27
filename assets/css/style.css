@@ -30,23 +30,31 @@ header {
   text-align: right;
   margin-left: 30%;
 }
+.calander {
+  border: 3px solid #210221;
+  border-radius: 47px;
+  overflow: hidden;
+  background-color: #E2EBFA;
+}
 .calCOntent{
   margin-left: 30%;
 }
-.bookNow{
-  height: 700px;
-}
+
 
 /* calander css  */
 
 
 table {
   border-collapse: collapse;
-  margin: 20px auto;
+  width: 100%;
+  text-align: center;
 
 }
 .calCOntent .bg_color{
   border-radius: 20px;
+}
+.calander{
+
 }
 
 th{
@@ -107,21 +115,6 @@ tr th:first-child  {
 }
 
 
-
-.imgSection {
-  /* position: absolute; */
-  /* top: -70px;
-  left: -117px; */
-  max-width: 400px;
-  height: auto;
-  border: 3px solid #000;
-  border-radius: 10px;
-  z-index: 10;
-}
-.imgSection img{
-  overflow: hidden;
-  border-radius: 10px;
-}
 
 /* for Package Card */
 

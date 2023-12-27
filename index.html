@@ -117,35 +117,30 @@
     ===============================================-->
 
     <section class="bookNow">
-      <div class="container ">
-        <div class="parent position-relative">
-          <div class="d-flex gap-4">
-            <div class="imgSection ">
-              <img class="img-fluid" src="./assets/images/5.png" alt="">
-            </div>
-            <h2 class="mb-4">Book Now</h2>
-          </div>
-          <div class="calanderSection bg_primary text-white box_shadow p-4 ">
-            <div class="calCOntent ">
-              <div class="bg_color pt-5">
-
+      <h1 class="text-center mb-2 text_darkColor">Book Now</h1>
+      <div class="container box_shadow bokingBorder">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="calander box_shadow">
+              <div class=" pt-5">
+  
                 <div class="calendar-controls">
                   <div class="d-flex align-items-center justify-content-center">
-                    <div class="arrow-button" onclick="nextYear()"><i class="fa-solid fa-angle-up"></i></div>
-
+                    <div class="arrow-button" onclick="nextYear()"><i class="fa-solid fa-angle-up" aria-hidden="true"></i></div>
+  
                   </div>
                   <div class="d-flex clickBtn align-items-center justify-content-between">
-                    <div class="arrow-button" onclick="previousMonth()"><i class="fa-solid fa-angle-left"></i></div>
-                    <span id="currentMonthYear"></span>
-                    <div class="arrow-button" onclick="nextMonth()"><i class="fa-solid fa-angle-right"></i></div>
+                    <div class="arrow-button" onclick="previousMonth()"><i class="fa-solid fa-angle-left" aria-hidden="true"></i></div>
+                    <span id="currentMonthYear">December 2023</span>
+                    <div class="arrow-button" onclick="nextMonth()"><i class="fa-solid fa-angle-right" aria-hidden="true"></i></div>
                   </div>
                   <div class="d-flex align-items-center justify-content-center">
-                    <div class="arrow-button" onclick="previousYear()"><i class="fa-solid fa-angle-down"></i></div>
-
+                    <div class="arrow-button" onclick="previousYear()"><i class="fa-solid fa-angle-down" aria-hidden="true"></i></div>
+  
                   </div>
                 </div>
-
-
+  
+  
                 <table id="calendar">
                   <thead>
                     <tr>
@@ -158,18 +153,72 @@
                       <th>S</th>
                     </tr>
                   </thead>
-                  <tbody>
-                    <!-- Calendar days will be inserted here dynamically -->
-                  </tbody>
+                  <tbody><tr><td></td><td></td><td></td><td></td><td></td><td>1</td><td>2</td></tr><tr><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr><tr><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td></tr><tr><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td></tr><tr><td>24</td><td>25</td><td>26</td><td class="current-date">27</td><td>28</td><td>29</td><td>30</td></tr><tr><td>31</td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody>
                 </table>
               </div>
-              <div class="mt-4">
-                <button class="submitBtn">Submit</button>
+  
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="p-4 text_darkColor">
+              <h2 class="text_darkColor fw-bold">Thrusday, February 8,2024</h2>
+
+              <div class="contents">
+<h3 class="fw-bold mx-3 mb-2">AM</h3>
+<div class="row justify-content-between gy-4">
+<div class="col-4">
+  <button class="calBtn">12:30 AM</button>
+</div>
+<div class="col-4">
+  <button class="calBtn">01:00 AM</button>
+</div>
+<div class="col-4">
+  <button class="calBtn">1:30 AM</button>
+</div>
+<div class="col-4">
+  <button class="calBtn">2:00 AM</button>
+</div>
+<div class="col-4">
+  <button class="calBtn">2:30 AM</button>
+</div>
+<div class="col-4">
+  <button class="calBtn">3:00 AM</button>
+</div>
+<div class="col-4">
+  <button class="calBtn">3:30 AM</button>
+</div>
+<div class="col-4">
+  <button class="calBtn">4:00 AM</button>
+</div>
+<div class="col-4">
+  <button class="calBtn">4:30 AM</button>
+</div>
+</div>
+
+<h3 class="fw-bold mx-3 mt-5 mb-2">PM</h3>
+<div class="row  gy-3">
+
+<div class="col-4">
+  <button class="calBtn">4:00 AM</button>
+</div>
+<div class="col-4">
+  <button class="calBtn">4:30 AM</button>
+</div>
+</div>
+<div class="text-right mt-5" style="
+text-align: right">
+  <button class="submitBtn">Submit</button>
+</div>
+
               </div>
             </div>
-
           </div>
         </div>
+     
+
+        <!-- rikght section -->
+
+ 
       </div>
     </section>
     <!-- -------------- === === =======================================
