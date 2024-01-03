@@ -63,65 +63,37 @@
           </div>
         </div>
       </nav>
-  <main class="min-vh-80">
+  <main class="min-vh-80 bg_color">
   <!-- -------------- === === =======================================
                     Banner Section
     ===============================================-->
-    <div class="container py-5">
-    <section id="events" >
-       
-            <h2 class="red text-center text-uppercase fw-bold">events</h2>
-      
-            <div class="pt-5">
-                <div class="row ">
-                    <div class="col-md-9  ">
-                        <div class="row bg_color my-3 py-3">
-                            <div class="col-lg-3">
-                                <img src="/assets/images/9.png" alt="">
-                            </div>
-                            <div class="col-lg-9">
-                                <h2 class="red fw-bold py-1">WEDDING</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et</p>
-                            </div>
-                        </div>
-                      
-                    </div>
-
-                </div>
-                <div class="row justify-content-end">
-                    <div class="col-md-9  ">
-                        <div class="row bg_color my-3 py-3">
-                            <div class="col-lg-3">
-                                <img src="/assets/images/10.png" alt="">
-                            </div>
-                            <div class="col-lg-9">
-                                <h2 class="red fw-bold py-1">WEDDING</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et</p>
-                            </div>
-                        </div>
-                      
-                    </div>
-
-                </div>
-                <div class="row ">
-                    <div class="col-md-9  ">
-                        <div class="row bg_color my-3 py-3">
-                            <div class="col-lg-3">
-                                <img src="/assets/images/11.png" alt="">
-                            </div>
-                            <div class="col-lg-9">
-                                <h2 class="red fw-bold py-1">WEDDING</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et</p>
-                            </div>
-                        </div>
-                      
-                    </div>
-
-                </div>
-            </div>
+    <section id="bookForm" class="bg_color d-flex align-items-center justify-content-center " style="height: 600px;" >
+        <div >
+<div class="sedulebox bg-white p-5 " style="max-width: 500px; height: auto;">
+   <div class="text-center">
+    <span class="submitBtn">Book Now</span>
+   </div>
+    <p class="pt-4 fs-5 text-center">Thank you for scheduling a session with me!
+    <p class="pt-3 fs-5 text-center">
+        Please view the details of this session below:
+        Session details:
         
-    </section>
+    </p>
+    <p class=" text-center py-3" style="font-size: 36px;">Jan 2, 2024 at 12:00 PM
+    </p>
+    <p class="pt-3 fs-5 text-center">
+        (Eastern Time - US & Canada)
+        
+    </p>
+<div class="text-center mt-4">
+    <button class="submitBtn bg_red">RESCHEDULE SESSION</button>
 </div>
+<div class="text-center mt-3">
+    <a class="submitBtn bg_red booking_prompt" data-title="Are You Sure?" href="facebook.com">CANCEL SESSION</a>
+</div>
+
+        </div>
+    </section>
   </main>
 
 
@@ -172,8 +144,24 @@
 
   <!-- al JavaScripts links and Tags -->
   <script src="./vendors/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
   <script src="./vendors/js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
   <script src="./assets/js/main.js"></script>
+  
+  <script>
+    
+    $('a.booking_prompt').confirm({
+    content: "ARE YOU SURE CANCEL YOUR SCEDULE?",
+});
+$('a.booking_prompt').confirm({
+    buttons: {
+        hey: function(){
+            location.href = this.$target.attr('href');
+        }
+    }
+});
+  </script>
 </body>
 
 </html>

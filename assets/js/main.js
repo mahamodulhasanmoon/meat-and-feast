@@ -3,7 +3,10 @@ const currentMonthYearElement = document.getElementById('currentMonthYear');
 let currentDate = new Date();
 
 function generateCalendar(year, month) {
-  calendarBody.innerHTML = '';
+  if(calendarBody){
+
+    calendarBody.innerHTML = '';
+  }
 
   const today = new Date(); // Get the current date
 
@@ -43,18 +46,23 @@ function generateCalendar(year, month) {
 
         dayCounter++;
       }
+if(row){
 
-      row.appendChild(cell);
+  row.appendChild(cell);
+}
+    }
+    if(calendarBody){
+
+      calendarBody.appendChild(row);
     }
 
-    calendarBody.appendChild(row);
   }
 
   // Update the displayed month and year
-  currentMonthYearElement.textContent = new Intl.DateTimeFormat('en-US', {
+  currentMonthYearElement &&( currentMonthYearElement.textContent = new Intl.DateTimeFormat('en-US', {
     month: 'long',
     year: 'numeric'
-  }).format(new Date(year, month));
+  }).format(new Date(year, month)));
 }
 
 function handleDateSelection(year, month, day) {
@@ -93,3 +101,21 @@ function updateCalendar() {
 
 // Initial calendar display
 generateCalendar(currentDate.getFullYear(), currentDate.getMonth());
+
+
+
+// for selected menu
+$(function () {
+  const pathname = location.pathname;
+
+  $('.navbar  a').each(function () {
+    const linkHref = $(this).attr('href');
+    if ('/'+linkHref === pathname) {
+      $(this).addClass('red');
+    } else {
+      $(this).removeClass('red');
+    }
+  });
+});
+
+
